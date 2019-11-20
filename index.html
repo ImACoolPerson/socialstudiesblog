@@ -95,7 +95,11 @@
       <div id="header">
         <b><p class="headernametags">Social Studies Blog</p>
         <div class="dropdown">
-          <button id="menuicon" class="dropbtn" width="40px" onclick="myFunction()"></button>
+          <div class="container" id="container" onclick="myFunction(this)">
+           <div class="bar1"></div>
+           <div class="bar2"></div>
+           <div class="bar3"></div>
+          </div>
           <div id="myDropdown" class="dropdown-content">
             <a href="">Menu 1</a>
             <a href="">Menu 2</a>
@@ -105,16 +109,32 @@
          <hr id="headerline">
          </b>
        </div>
-       <script>
-        function onClick() {
-          alert("you did something!");
+       <br>
+       <br>
+       <p class="randomtext">fdsfdsfsdds<p>
+       <p class="randomtext">fdsfdsfsdds<p>
+       <p class="randomtext">fdsfdsfsdds<p>
+       <p class="randomtext">fdsfdsfsdds<p>
+       <p class="randomtext">fdsfdsfsdds<p>
+       <p class="randomtext">fdsfdsfsdds<p>
+       <p class="randomtext">fdsfdsfsdds<p>
+       <p class="randomtext">fdsfdsfsdds<p>
+       <p class="randomtext">fdsfdsfsdds<p>
+       <p class="randomtext">fdsfdsfsdds<p>
+       <p class="randomtext">fdsfdsfsdds<p>
+       <p class="randomtext">fdsfdsfsdds<p>
+       <p class="randomtext">fdsfdsfsdds<p>
+       <p class="randomtext">fdsfdsfsdds<p>
+       <p class="randomtext">fdsfdsfsdds<p>
+       <p class="randomtext">fdsfdsfsdds<p>
+       <p class="randomtext">fdsfdsfsdds<p>
+       <p class="randomtext">fdsfdsfsdds<p>
+       <p class="randomtext">fdsfdsfsdds<p>
+      <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+          document.getElementById("myDropdown").classList.toggle("show");
         }
-        /* When the user clicks on the button,
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-           ocument.getElementById("myDropdown").classList.toggle("show");
-        }
-
           // Close the dropdown menu if the user clicks outside of it
         window.onclick = function(event) {
           if (!event.target.matches('.dropbtn')) {
@@ -124,31 +144,11 @@
               var openDropdown = dropdowns[i];
               if (openDropdown.classList.contains('show')) {
                 openDropdown.classList.remove('show');
+                document.get
               }
             }
           }
         }
        </script>
-       <br>
-       <br>
-       <p class="randomtext">fdsfdsfsdds<p>
-       <p class="randomtext">fdsfdsfsdds<p>
-       <p class="randomtext">fdsfdsfsdds<p>
-       <p class="randomtext">fdsfdsfsdds<p>
-       <p class="randomtext">fdsfdsfsdds<p>
-       <p class="randomtext">fdsfdsfsdds<p>
-       <p class="randomtext">fdsfdsfsdds<p>
-       <p class="randomtext">fdsfdsfsdds<p>
-       <p class="randomtext">fdsfdsfsdds<p>
-       <p class="randomtext">fdsfdsfsdds<p>
-       <p class="randomtext">fdsfdsfsdds<p>
-       <p class="randomtext">fdsfdsfsdds<p>
-       <p class="randomtext">fdsfdsfsdds<p>
-       <p class="randomtext">fdsfdsfsdds<p>
-       <p class="randomtext">fdsfdsfsdds<p>
-       <p class="randomtext">fdsfdsfsdds<p>
-       <p class="randomtext">fdsfdsfsdds<p>
-       <p class="randomtext">fdsfdsfsdds<p>
-       <p class="randomtext">fdsfdsfsdds<p>
     </body>
   </html>
