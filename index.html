@@ -1,15 +1,156 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <title>Social Studies Blog</title>
       <style>
-        p {
-          font-size: 100px;
-          font-family: sans-serif;
+        body {
+          background-color: white;
         }
+          #headerline {
+          margin: 0px;
+          border-style: solid;
+          border-width: 0.3px
+        }
+        .randomtext {
+          margin-left: 10px
+        }
+        #header {
+          position: fixed;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          background-color: white;
+        }
+        .headernametags {
+          font-family: sans-serif;
+          color: white;
+          font-size: 20px;
+          -webkit-text-stroke: 0.7px black;
+          margin: 8px;
+        }
+        #menuicon {
+          position: fixed;
+          top: 0px;
+          right: 0px;
+          background-image: url("http://www.socialstudiesblog.ml/header_img.png");
+          background-size: cover;
+          width: 40px;
+          height: 38px;
+          background-color: rgba(0, 0, 0, 0);
+          border-color: rgba(0, 0, 0, 0);
+          background-repeat: no-repeat;
+          margin-top: px;
+        }
+        button:hover {
+          cursor: pointer;
+        }
+        button:focus {outline:0;}
+        /* Dropdown Button */
+        .dropbtn {
+          background-color: #3498DB;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
+
+        /* Dropdown button on hover & focus */
+        .dropbtn:hover, .dropbtn:focus {
+          background-color: #2980B9;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+          position: fixed;
+          display: inline-block;
+        right: 180px;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #ddd}
+
+        /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+        .show {display:block;}
       </style>
     </head>
     <body>
-      <p>This thing works!</p>
+      <div id="header">
+        <b><p class="headernametags">Social Studies Blog</p>
+        <div class="dropdown">
+          <button id="menuicon" class="dropbtn" width="40px" onclick="myFunction()"></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="">Menu 1</a>
+            <a href="">Menu 2</a>
+            <a href="">Menu 3</a>
+          </div>
+         </div>
+         <hr id="headerline">
+         </b>
+        </div>
+        <script>
+      function onClick() {
+      alert("you did something!");
+      }
+      /* When the user clicks on the button,
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+      <br>
+      <br>
+      <p class="randomtext">fdsfdsfsdds<p>
+      <p class="randomtext">fdsfdsfsdds<p>
+      <p class="randomtext">fdsfdsfsdds<p>
+      <p class="randomtext">fdsfdsfsdds<p>
+      <p class="randomtext">fdsfdsfsdds<p>
+      <p class="randomtext">fdsfdsfsdds<p>
+      <p class="randomtext">fdsfdsfsdds<p>
+      <p class="randomtext">fdsfdsfsdds<p>
+      <p class="randomtext">fdsfdsfsdds<p>
+      <p class="randomtext">fdsfdsfsdds<p>
+      <p class="randomtext">fdsfdsfsdds<p>
+      <p class="randomtext">fdsfdsfsdds<p>
+      <p class="randomtext">fdsfdsfsdds<p>
+      <p class="randomtext">fdsfdsfsdds<p>
+      <p class="randomtext">fdsfdsfsdds<p>
+      <p class="randomtext">fdsfdsfsdds<p>
+      <p class="randomtext">fdsfdsfsdds<p>
+      <p class="randomtext">fdsfdsfsdds<p>
+      <p class="randomtext">fdsfdsfsdds<p>
     </body>
   </html>
+
+
+
